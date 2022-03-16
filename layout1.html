@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout 1</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+      body {
+        font-size: 1.3rem;
+        font-family: "Lato", sans-serif;
+      }
+      header {
+        background-color: #343a40;
+        padding: 1em;
+        max-width: 100%;
+      }
+      ul {
+        font-family: "Source Sans Pro", sans-serif;
+        padding: 1.5em;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      li {
+        font-weight: bold;
+        margin-bottom: 0.7em;
+        text-transform: uppercase;
+        float: left;
+      }
+      a,
+      input,
+      button {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 0.9em;
+        display: inline-block;
+        padding: 1em 1.2em;
+      }
+      .active,
+      button {
+        background-color: #28a745;
+        border-color: #28a745;
+      }
+      input,
+      button {
+        border: none;
+        border-radius: 0.3rem;
+        margin-right: 0.5em;
+      }
+      main > div {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0.3rem;
+        color: #212529;
+        background-color: #e9ecef;
+        padding: 4rem 2rem;
+        max-width: 100%;
+        margin: 0 auto;
+        font-family: "Lato", sans-serif;
+      }
+      main h1 {
+        color: #212529;
+        font-size: 6.5rem;
+        font-weight: 900;
+        line-height: 1.2;
+      }
+      main p {
+        font-size: 1.2em;
+      }
+      main button {
+        padding: 0.5rem 1rem;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        border-radius: 0.3rem;
+        color: #fff;
+        background-color: #007bff;
+        border-color: #007bff;
+        margin: 1em 0;
+      }
+      footer {
+        background-color: #1e242a;
+        padding: 0.8em;
+        text-align: center;
+        color: #fff;
+        font-size: 1.5rem;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+      }
+      footer span {
+        color: #e25555;
+        font-size: 1.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contact</a></li>
+          <li style="float: right">
+            <form>
+              <input type="text" placeholder="Search" />
+              <button type="submit">Search</button>
+            </form>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <h1>Hello World!</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+          repudiandae earum commodi ipsam eveniet maxime sequi porro soluta
+          veniam, ut iste ea necessitatibus, cum laborum sunt accusantium omnis
+          et tenetur!
+        </p>
+        <button>Learn more &raquo;</button>
+      </div>
+    </main>
+    <footer>Made with <span>&#9829;</span> by CODE SPACE Team</footer>
+  </body>
+</html>

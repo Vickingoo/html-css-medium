@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout 3</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+      body {
+        font-size: 1.3rem;
+        font-family: "Lato", sans-serif;
+      }
+      header {
+        background-color: #343a40;
+        padding: 1em;
+        max-width: 100%;
+      }
+      ul {
+        font-family: "Source Sans Pro", sans-serif;
+        padding: 1.5em;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      li {
+        font-weight: bold;
+        margin-bottom: 0.7em;
+        text-transform: uppercase;
+        float: left;
+      }
+      a,
+      input,
+      button {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 0.9em;
+        display: inline-block;
+        padding: 1em 1.2em;
+      }
+      .active,
+      button {
+        background-color: #28a745;
+        border-color: #28a745;
+      }
+      input,
+      button {
+        border: none;
+        border-radius: 0.3rem;
+        margin-right: 0.5em;
+      }
+      main {
+        margin-bottom: 5.5em;
+        overflow: hidden;
+      }
+      main > div:first-of-type {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0.3rem;
+        color: #212529;
+        background-color: #e9ecef;
+        padding: 4rem 2rem;
+        max-width: 100%;
+        margin: 0 auto 2em;
+        font-family: "Lato", sans-serif;
+      }
+      main h1 {
+        color: #212529;
+        font-size: 6.5rem;
+        font-weight: 900;
+        line-height: 1.2;
+      }
+      main p {
+        font-size: 1.2em;
+      }
+      main button {
+        padding: 0.5rem 1rem;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        border-radius: 0.3rem;
+        color: #fff;
+        background-color: #007bff;
+        border-color: #007bff;
+        margin: 1em 0;
+        max-width: 80%;
+      }
+      main section a,
+      aside a {
+        color: #007bff;
+        padding: 0;
+      }
+      .author {
+        padding-left: 0.7em;
+      }
+      .two-columns {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      section {
+        width: 60%;
+        padding: 1em;
+      }
+      .date {
+        font-size: 1.1rem;
+        margin: 0.8em 0 1.2em;
+        color: #343a40;
+      }
+      img {
+        max-width: 100%;
+      }
+      figcaption {
+        font-style: italic;
+        margin-bottom: 2em;
+        text-align: center;
+      }
+      section p {
+        margin-bottom: 1.5em;
+      }
+      aside {
+        width: 30%;
+        background-color: #f9f9fb;
+        padding: 0.5em;
+      }
+      aside h2 {
+        padding-left: 1em;
+        padding-top: 0.8em;
+      }
+      aside ul {
+        padding: 2em 1em;
+      }
+      aside li {
+        display: block;
+        width: 100%;
+      }
+      footer {
+        background-color: #1e242a;
+        padding: 0.8em;
+        text-align: center;
+        color: #fff;
+        font-size: 1.5rem;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+      }
+      footer span {
+        color: #e25555;
+        font-size: 1.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contact</a></li>
+          <li style="float: right">
+            <form>
+              <input type="text" placeholder="Search" />
+              <button type="submit">Search</button>
+            </form>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <h1>Hello World!</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+          repudiandae earum commodi ipsam eveniet maxime sequi porro soluta
+          veniam, ut iste ea necessitatibus, cum laborum sunt accusantium omnis
+          et tenetur!
+        </p>
+        <button>Learn more &raquo;</button>
+      </div>
+      <div class="two-columns">
+        <section>
+          <article>
+            <h2>Sample blog post</h2>
+            <p class="date">
+              January 1, 2014 by <a href="#" class="author">Mark</a>
+            </p>
+            <figure>
+              <img src="img/surf.jpg" alt="Enjoy the waves!" />
+              <figcaption>A beautiful place to surf.</figcaption>
+            </figure>
+            <p>
+              This blog post shows a few different types of content that’s
+              supported and styled with Bootstrap. Basic typography, images, and
+              code are all supported. Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Expedita officiis quam ad minima rerum beatae
+              consequuntur a porro nostrum. Dicta accusantium eaque aut earum
+              provident harum sunt odio laboriosam hic!
+            </p>
+            <hr />
+            <p>
+              Cum sociis natoque penatibus et magnis
+              <a href="#">dis parturient montes</a>, nascetur ridiculus mus.
+              Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
+              vestibulum. Sed posuere consectetur est at lobortis. Cras mattis
+              consectetur purus sit amet fermentum. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Debitis eveniet, iusto enim quas,
+              consequuntur excepturi facere placeat incidunt aliquid reiciendis
+              culpa magnam accusantium omnis tempore consequatur nesciunt
+              tenetur dolor minus?
+            </p>
+            <p>
+              Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras
+              mattis consectetur purus sit amet fermentum. Aenean lacinia
+              bibendum nulla sed consectetur. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Nobis, adipisci nisi. Quaerat porro,
+              doloribus tempore aliquam repudiandae reprehenderit minima
+              deserunt quod dolores dolorem quisquam aspernatur est, nisi
+              praesentium, dolorum repellendus.
+            </p>
+          </article>
+        </section>
+        <aside>
+          <h2>Archives</h2>
+          <ul>
+            <li><a href="#">March 2014</a></li>
+            <li><a href="#">February 2014</a></li>
+            <li><a href="#">January 2014</a></li>
+            <li><a href="#">December 2013</a></li>
+            <li><a href="#">November 2013</a></li>
+            <li><a href="#">October 2013</a></li>
+            <li><a href="#">September 2013</a></li>
+            <li><a href="#">August 2013</a></li>
+            <li><a href="#">July 2013</a></li>
+            <li><a href="#">June 2013</a></li>
+            <li><a href="#">May 2013</a></li>
+            <li><a href="#">April 2013</a></li>
+          </ul>
+        </aside>
+      </div>
+    </main>
+    <footer>Made with <span>&#9829;</span> by CODE SPACE Team</footer>
+  </body>
+</html>

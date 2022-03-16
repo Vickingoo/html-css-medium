@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fixed Background</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&family=Smooch+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html,
+      body,
+      main {
+        height: 100%;
+        font-family: "Raleway", "Microsoft JhengHei";
+      }
+
+      .fixed-bg {
+        min-height: 100%;
+        background-size: cover;
+        -webkit-background-size: cover !important;
+        -moz-background-size: cover !important;
+        -o-background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 1em;
+        line-height: 1.5;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 3.5em;
+        color: rgba(255, 255, 255, 1);
+        text-shadow: 1px 1px 10px #000, 5px 5px 20px #000, 1px 0px 20px #def;
+        opacity: 0.95;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+      .text-box {
+        background: rgba(255, 255, 255, 0.95);
+        padding: 20px;
+        margin: 0;
+        max-width: 50%;
+      }
+      .fixed-bg h2 {
+        font-size: 5em;
+        font-style: italic;
+        font-family: 'Smooch Sans', sans-serif;
+      }
+      .fixed-bg p {
+        font-size: 1.3rem;
+        margin: 0.6em 0 1em;
+      }
+
+      .bg-1 {
+        background-image: url("img/swimming.jpg");
+      }
+      .bg-1-1 {
+        background-image: url("img/football.jpg");
+      }
+      .bg-2 {
+        background-image: url("img/basketball2.jpg");
+      }
+      .bg-2-1 {
+        background-image: url("img/baseball.jpg");
+      }
+      .bg-3 {
+        background-image: url("img/arrow.jpg");
+      }
+      .bg-3-1 {
+        background-image: url("img/running.jpg");
+      }
+      .bg-4 {
+        background-image: url("img/sky.jpg");
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="fixed-bg bg-1">
+        <h1>
+          I hated every minute of training, but I said, ‘Don’t quit. Suffer now
+          and live the rest of your life as a champion.’
+        </h1>
+      </div>
+      <div class="fixed-bg bg-1-1">
+        <div class="text-box">
+          <h2>Stronger together</h2>
+          <img src="img/football.jpg" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            minus vel quam vero dolore? Neque facere illum aliquam distinctio
+            nesciunt a assumenda ad totam expedita, modi dicta quas sit quia.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
+            asperiores, fugiat doloremque velit tempore, reprehenderit ratione
+            quisquam nisi dolore nulla quia nobis optio? Recusandae distinctio
+            excepturi facere dolor officia quis.
+          </p>
+        </div>
+      </div>
+      <div class="fixed-bg bg-2">
+        <h1>A trophy carries dust. Memories last forever.</h1>
+      </div>
+      <div class="fixed-bg bg-2-1">
+        <div class="text-box">
+          <h2>Stronger together</h2>
+          <img src="img/baseball2.jpg" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            minus vel quam vero dolore? Neque facere illum aliquam distinctio
+            nesciunt a assumenda ad totam expedita, modi dicta quas sit quia.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
+            asperiores, fugiat doloremque velit tempore, reprehenderit ratione
+            quisquam nisi dolore nulla quia nobis optio? Recusandae distinctio
+            excepturi facere dolor officia quis.
+          </p>
+        </div>
+      </div>
+      <div class="fixed-bg bg-3">
+        <h1>
+          The five S's of sports training are: stamina, speed, strength, skill,
+          and spirit; but the greatest of these is spirit.
+        </h1>
+      </div>
+      <div class="fixed-bg bg-3-1">
+        <div class="text-box">
+          <h2>Stronger together</h2>
+          <img src="img/running.jpg" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            minus vel quam vero dolore? Neque facere illum aliquam distinctio
+            nesciunt a assumenda ad totam expedita, modi dicta quas sit quia.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
+            asperiores, fugiat doloremque velit tempore, reprehenderit ratione
+            quisquam nisi dolore nulla quia nobis optio? Recusandae distinctio
+            excepturi facere dolor officia quis.
+          </p>
+        </div>
+      </div>
+      <div class="fixed-bg bg-4">
+        <h1>
+          It's not the will to win that matters—everyone has that. It's the will
+          to prepare to win that matters.
+        </h1>
+      </div>
+    </main>
+  </body>
+</html>

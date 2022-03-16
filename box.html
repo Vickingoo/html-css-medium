@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Box</title>
+    <style>
+      h1 {
+        color: #212529;
+        font-size: 3.5rem;
+        font-weight: 900;
+        line-height: 1.2;
+      }
+      div {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0.3rem;
+        color: #212529;
+        background-color: #e9ecef;
+        padding: 4rem 2rem;
+        width: 60%;
+        margin: 2% auto;
+        font-family: "Lato", sans-serif;
+      }
+      span {
+        text-transform: capitalize;
+      }
+      .mayusculas {
+        text-transform: uppercase;
+      }
+      .no-borders {
+        border: 0;
+      }
+      p {
+        margin-bottom: 2em;
+        font-size: 1.2em;
+      }
+      hr {
+        margin-bottom: 1.5rem;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+      }
+      a {
+        color: #212529;
+        background-color: #007bff;
+        border-color: #007bff;
+        padding: 0.7% 1.2%;
+        border-radius: 0.5rem;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div>
+      <h1>Tim Berners-Lee</h1>
+      <div class="no-borders">
+        <p>
+          <span
+            >Timothy
+            <a href="https://home.cern/science/computing/birth-web">"Tim"</a>
+            John Berners-Lee</span
+          >
+          es un científico de la computación británico, conocido por ser el
+          padre de la Web. Estableció la primera comunicación entre un cliente y
+          un servidor usando el protocolo
+          <span class="mayusculas">http</span> en noviembre de 1989.
+        </p>
+        <hr />
+        <p>
+          En octubre de 1994 fundó el Consorcio de la
+          <span>world wide web</span> (W3C) con sede en el
+          <span class="mayusculas">mit</span>, para supervisar y estandarizar el
+          desarrollo de las tecnologías sobre las que se fundamenta la Web y que
+          permiten el funcionamiento de Internet.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Specificity</title>
+    <style>
+      :root {
+        --blue: #0d6efd;
+        --indigo: #6610f2;
+        --purple: #6f42c1;
+        --pink: #d63384;
+        --red: #dc3545;
+        --orange: #fd7e14;
+        --yellow: #ffc107;
+        --green: #198754;
+        --teal: #20c997;
+        --cyan: #0dcaf0;
+        --black: #000;
+        color: #fff;
+      }
+      body #content .alternative p {
+        background-color: var(--red);
+      }
+      div {
+        background-color: var(--orange);
+        width: 95%;
+        margin: 0.5em auto;
+      }
+      h2,
+      p,
+      div {
+        border-radius: 0.3rem;
+        padding: 0.5em 0.6em;
+      }
+      h2 {
+        color: var(--black);
+      }
+      p {
+        border-radius: 0.3rem;
+        padding: 0.5em 0.6em;
+        background-color: var(--blue);
+        width: 80%;
+        margin: 0.5em auto;
+      }
+      .week {
+        background-color: var(--green);
+      }
+      #top {
+        background-color: var(--pink);
+      }
+      #content {
+        background-color: var(--purple);
+      }
+      .alternative {
+        background-color: var(--yellow);
+      }
+      .teal {
+          background-color: var(--teal) !important;
+      }
+      .alternative p:first-of-type{
+          background-color: inherit !important;
+          color: initial;
+      }
+    </style>
+  </head>
+  <body>      
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+      necessitatibus nihil placeat ab, magni facilis nostrum. Soluta in
+      voluptatem pariatur dolore reprehenderit iusto facere doloribus ipsa
+      distinctio eaque, quas dignissimos.
+    </p>
+    <div>
+      <h2>Into the div</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis atque
+        perspiciatis, harum molestiae itaque sequi a, odio eius impedit nam
+        explicabo iusto tenetur laudantium sint necessitatibus, porro dolorum
+        repellat? Consectetur.
+      </p>
+      <p class="week">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita in
+        qui asperiores ullam magnam ipsum a vitae eaque ratione doloribus
+        doloremque, nisi minus quia. Illum eum laborum sit? Vitae, autem!
+      </p>
+    </div>
+    <p class="week">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum nemo facere,
+      quam nisi quisquam cumque, excepturi ex numquam molestias dolores hic
+      voluptate amet reprehenderit et? Suscipit repellat rerum magni quidem?
+    </p>
+    <p id="top">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, neque
+      excepturi. Ducimus, perferendis facere itaque dolor, eius rerum unde ea
+      voluptatum similique vel expedita accusamus vero ut quibusdam magni
+      repellat.
+    </p>
+    <div id="content">
+      <h2>Into content</h2>
+      <div class="alternative">
+        <h2>Into alternative</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas
+          voluptates hic labore. Libero accusamus ratione dicta dolore modi hic
+          ipsa magnam explicabo totam nulla atque, assumenda ea architecto
+          accusantium vero.
+        </p>
+        <p class="teal">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Exercitationem itaque id illum a cum blanditiis enim est officiis
+          ratione, expedita voluptas velit quam cumque, saepe voluptatum nobis
+          corrupti, non eos!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

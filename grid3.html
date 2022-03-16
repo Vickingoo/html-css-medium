@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Placing elements with Grid 2</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+      :root {
+        font-size: 0.785rem;
+        font-family: "Rubik", sans-serif;
+        --blue: #0d6efd;
+        --indigo: #6610f2;
+        --purple: #6f42c1;
+        --pink: #d63384;
+        --red: #dc3545;
+        --orange: #fd7e14;
+        --yellow: #ffc107;
+        --green: #198754;
+        --teal: #20c997;
+        --cyan: #0dcaf0;
+        --dark: #292a2b;
+      }
+      section {
+        display: grid;
+        grid-gap: 0.9em;
+        grid-template-columns: repeat(4, 15%);
+        grid-template-rows: 30% 30% 30%;
+        grid-auto-flow: column;
+        justify-content: center;
+        background-color: var(--dark);
+        height: 50vh;
+        padding: 1em;
+      }
+      .box {
+        background-color: var(--green);
+        color: #fff;
+        border-radius: 0.3rem;
+        padding: 1.2em;
+        font-size: 1.8rem;
+      }
+      .box:nth-child(even) {
+        background-color: var(--blue);
+        color: var(--dark);
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
+    </section>
+  </body>
+</html>

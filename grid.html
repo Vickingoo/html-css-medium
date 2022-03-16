@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Placing elements with Grid</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+      :root {
+        font-size: 0.785rem;
+        font-family: "Rubik", sans-serif;
+        --blue: #0d6efd;
+        --indigo: #6610f2;
+        --purple: #6f42c1;
+        --pink: #d63384;
+        --red: #dc3545;
+        --orange: #fd7e14;
+        --yellow: #ffc107;
+        --green: #198754;
+        --teal: #20c997;
+        --cyan: #0dcaf0;
+        --dark: #292a2b;
+      }
+      section {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-gap: 10px;
+        justify-content: center;
+        background-color: var(--dark);
+        height: 50vh;
+        padding: 1em;
+      }
+      .box {
+        background-color: var(--green);
+        color: #fff;
+        border-radius: .3rem;
+        padding: 1.2em;
+        font-size: 1.8rem;
+      }
+
+      .a {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
+      .b {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+      }
+      .c {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+      }
+      .d {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
+      .e {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+      }
+      .f {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
+      /* Shorthand form 
+      .a {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+      }
+      .b {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+      }
+      .c {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+      }
+      .d {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+      }
+      .e {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+      }
+      .f {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+      } */
+      
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="box a">A</div>
+      <div class="box b">B</div>
+      <div class="box c">C</div>
+      <div class="box d">D</div>
+      <div class="box e">E</div>
+      <div class="box f">F</div>
+    </section>
+  </body>
+</html>
